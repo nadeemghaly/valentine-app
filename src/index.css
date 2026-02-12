@@ -1,0 +1,49 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Warm burgundy + rose gold palette */
+  --bg-deep: #0d0208;
+  --bg-wine: #2a0a1a;
+  --bg-plum: #3d1028;
+  --rose-gold: #e8b4b8;
+  --rose-gold-light: #f5d5d8;
+  --rose-hot: #ff3c6f;
+  --rose-soft: #ff7ea1;
+  --cream: #fff5f5;
+  --gold: #d4a574;
+  --gold-light: #e8c9a0;
+
+  font-family: 'DM Sans', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--cream);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  min-height: 100dvh;
+  overflow-x: hidden;
+  background: var(--bg-deep);
+  /* Layered radial gradients for depth */
+  background:
+    radial-gradient(ellipse 80% 60% at 20% 80%, rgba(100, 20, 50, 0.4) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 80% at 80% 20%, rgba(80, 15, 40, 0.3) 0%, transparent 50%),
+    radial-gradient(ellipse 100% 100% at 50% 50%, var(--bg-wine) 0%, var(--bg-deep) 70%);
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
